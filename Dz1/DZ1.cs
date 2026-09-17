@@ -23,27 +23,27 @@
 // }
 
 
-//Задание 3 
-// using System;
-//
-// class Dz 
-// {
-//     static void Main()
-//     {
-//         //генерация рандом чисел
-//         Random chislo = new Random();
-//
-//         Console.WriteLine(chislo.Next());
-//         Console.WriteLine(chislo.Next());
-//         Console.WriteLine(chislo.Next());
-//         Console.WriteLine(chislo.Next());
-//     }
-// }
+// Задание 3 
+ // using System;
+
+ // class Dz 
+ // {
+ //     static void Main()
+ //     {
+ //         //генерация рандом чисел
+ //         Random chislo = new Random();
+ //
+ //         Console.WriteLine(chislo.Next());
+ //         Console.WriteLine(chislo.Next());
+ //         Console.WriteLine(chislo.Next());
+ //         Console.WriteLine(chislo.Next());
+ //     }
+ // }
 
 
 //Задание 4
 // using System;
-//
+
 // class Dz
 // {
 //     static void Main()
@@ -99,15 +99,15 @@
 //         double b = double.Parse(Console.ReadLine());
 //     
 //         // Вывод до обмена
-//         Console.WriteLine(a + " " + b);
+//         Console.WriteLine(a + ", " + b);
 //         
 //         // Обмен местами 
-//         double chislo = a;  
+//         double c = a;  
 //         a = b;            
-//         b = chislo;         
+//         b = c;         
 //         
 //         // Вывод после обмена
-//         Console.WriteLine(a + " " + b);
+//         Console.WriteLine(a + ", " + b);
 //     }
 // }
 
@@ -247,7 +247,7 @@
 //         int shirina = 130;
 //         int razmerkv= 130;
 //         
-//         //вычисляем сколько влезет квадратв по длине 
+//         //вычисляем сколько влезет квадратов по длине 
 //         int skokdl = dlina / razmerkv;
 //         //вычисляем сколько влезет квадаратов по ширине 
 //         int skokshir = shirina / razmerkv;
@@ -279,21 +279,21 @@
 
 
 //Задание 17
-// using System;
+//  using System;
 //
-// class Dz
-// {
-//     static void Main()
-//     {
-//         int n = int.Parse(Console.ReadLine());
-//         //находим сотни
-//         int sto = (n / 100) % 10;
-//         //находим тысячи
-//         int tys = n / 1000;
-//         Console.WriteLine(sto);
-//         Console.WriteLine(tys);
-//     }
-//}
+//  class Dz
+//  {
+//      static void Main()
+//      {
+//          int n = int.Parse(Console.ReadLine());
+//          //находим сотни
+//          int sto = (n / 100) % 10;
+//          //находим тысячи
+//          int tys = n / 1000;
+//          Console.WriteLine(sto);
+//          Console.WriteLine(tys);
+//      }
+// }
 
 
 // Задание 18
@@ -310,37 +310,38 @@
 // }
 
 
-//Задание 19
-// using System;
-//
-// class Dz
-// {
-//     static void Main()
-//     {
-//         Console.WriteLine("Пользователь: Привет!");
-//         Console.WriteLine("Дневник: Как тебя зовут?");
-//         string name = Console.ReadLine();
-//         Console.WriteLine("Дневник: Привет, " + name + "!");
-//         Console.WriteLine("Пользователь: Ты знаешь что-то о тайной комнате?");
-//         Console.WriteLine("Дневник: Да");
-//         Console.WriteLine("Пользователь: Можешь рассказать?");
-//         Console.WriteLine("Дневник: Нет");
-//         
-//         // Пауза 5 сек
-//         System.Threading.Thread.Sleep(5000);
-//         Console.WriteLine("Дневник: но могу показать");
-//         
-//         // Генерация случ. цвета
-//         Random col = new Random();
-//         ConsoleColor[] colors = (ConsoleColor[])Enum.GetValues(typeof(ConsoleColor));
-//         ConsoleColor randomColor = colors[col.Next(colors.Length)];
-//         
-//         // Установка случайного цвета
-//         Console.ForegroundColor = randomColor;
-//         Console.WriteLine("Дневник: qwertyuiopp[asdfghjkasdfghj");
-//         
-//         // Сброс цвета
-//         Console.ResetColor();
-//     }
-//     
-// }
+// Задание 19
+ // using System;
+ //
+ // class Dz
+ // {
+ //     static void Main()
+ //     {
+ //         Console.WriteLine("Пользователь: Привет!");
+ //         Console.WriteLine("Дневник: Как тебя зовут?");
+ //         string name = Console.ReadLine();
+ //         Console.WriteLine("Дневник: Привет, " + name + "!");
+ //         Console.WriteLine("Пользователь: Ты знаешь что-то о тайной комнате?");
+ //         Console.WriteLine("Дневник: Да");
+ //         Console.WriteLine("Пользователь: Можешь рассказать?");
+ //         Console.WriteLine("Дневник: Нет");
+ //         
+ //         // Пауза 5 сек
+ //         Thread.Sleep(5000);
+ //         Console.WriteLine("Дневник: но могу показать");
+ //         
+ //         // Генерация случ. цвета
+ //         Random col = new Random();
+ //         //создает массив, в который записываются все возможные цвета
+ //         ConsoleColor[] colors = (ConsoleColor[])Enum.GetValues(typeof(ConsoleColor));
+ //         // выбирает цвет 
+ //         ConsoleColor randomColor = colors[col.Next(16)];
+ //         
+ //         // Установка случайного цвета, отвечает за то, какой будет цвет
+ //         Console.ForegroundColor = randomColor;
+ //         Console.WriteLine("        qwertyuiopp1345");
+ //         
+ //         // Сброс цвета
+ //         Console.ResetColor();
+ //     }
+ // }

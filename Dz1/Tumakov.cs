@@ -48,11 +48,11 @@
 //             Console.WriteLine("ax2 + bx + c = 0");
 //             
 //             
-//             Console.Write("Коэффициент a: ");
+//             Console.WriteLine("Коэффициент a: ");
 //             a = double.Parse(Console.ReadLine());
-//             Console.Write("Коэффициент b: ");
+//             Console.WriteLine("Коэффициент b: ");
 //             b = double.Parse(Console.ReadLine());
-//             Console.Write("Коэффициент c: ");
+//             Console.WriteLine("Коэффициент c: ");
 //             c = double.Parse(Console.ReadLine());
 //             
 //             // является ли уравнение квадратным
@@ -68,7 +68,7 @@
 //                 
 //                 // вывод дискриминанта
 //                 Console.WriteLine();
-//                 Console.WriteLine($"Дискриминант D = {d}");
+//                 Console.WriteLine($"Дискриминант D = " + d);
 //                 
 //                 // Анализ дискриминанта
 //                 if (d > 0)
@@ -83,8 +83,8 @@
 //                     x2 = (-b - Math.Sqrt(d)) / (2 * a);
 //                     
 //                     // Вывод корни
-//                     Console.WriteLine($"x1 = " + x1);
-//                     Console.WriteLine($"x2 = " + x2);
+//                     Console.WriteLine("x1 = " + x1);
+//                     Console.WriteLine("x2 = " + x2);
 //                 }
 //                 else if (d == 0)
 //                 {
@@ -95,7 +95,7 @@
 //                     x1 = -b / (2 * a);
 //                     
 //                     // Вывод корня
-//                     Console.WriteLine($"x = " + x1);
+//                     Console.WriteLine("x = " + x1);
 //                 }
 //                 else
 //                 {
